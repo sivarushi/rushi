@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logoo"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#13b586"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginLeft="120dp"
+            android:layout_weight="0.47"
+            android:text="@string/choose_title"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <DatePicker
+        android:id="@+id/datePicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/my_drawables" >
+    </DatePicker>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/details_number_edit"
+        android:textColorHint="#ff0000"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="360dp"
+        android:background="@drawable/my_drawables"
+        android:hint="@string/details_number"
+        android:paddingLeft="5dp"
+        android:inputType="number"
+        android:textColor="#13b586" />
+
+    <NumberPicker
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/datePicker1"
+        android:layout_below="@+id/datePicker1"
+        android:layout_marginRight="38dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:background="@drawable/my_drawables"
+        android:text="@string/button" />
+
+    <NumberPicker
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/datePicker1"
+        android:layout_alignTop="@+id/button1"
+        android:layout_marginLeft="22dp"
+        android:layout_weight="1"
+        android:background="@drawable/my_drawables"
+        android:text="@string/button" />
+
+    <Button
+        android:id="@+id/Save"
+        android:layout_width="190dp"
+        android:layout_height="38dp"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignParentBottom="true"
+        android:background="#13b586"
+        android:onClick="resturant"
+        android:paddingLeft="18dp"
+        android:text="@string/login_button"
+        android:textColor="#fff"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/generatenumber"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Save"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/my_drawables" />
+
+</RelativeLayout>
